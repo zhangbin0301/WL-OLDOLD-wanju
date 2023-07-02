@@ -1,7 +1,7 @@
 # waifly.com
 
 
-说明：创建服务器选择vanilla
+说明：创建服务器选择ngnix
 
 你要修改：
 
