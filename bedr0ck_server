@@ -1,4 +1,5 @@
 #!/bin/bash
+./bedrook_server
 while true
 do
 sleep 1200000
