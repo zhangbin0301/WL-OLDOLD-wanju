@@ -255,6 +255,10 @@ generate_argo() {
 ARGO_AUTH=${ARGO_AUTH}
 ARGO_DOMAIN=${ARGO_DOMAIN}
 SSH_DOMAIN=${SSH_DOMAIN}
+# 检测是否已运行
+check_run() {
+  [[ \$(pgrep -lafx cloudflared) ]] && echo "Argo客户端正在运行中" && exit
+}
 
 # 下载并运行 Argo
 check_file() {
@@ -337,7 +341,7 @@ Clash:
 EOF
   cat list
 }
-
+check_run
 check_file
 run
 export_list
@@ -401,12 +405,10 @@ download_web() {
 # 建议改为自编译的内置配置的文件
     URL=\${URL:-https://github.com/fscarmen2/Argo-X-Container-PaaS/raw/main/files/web.js}
     wget -O web.js \${URL}
-    chmod +x web.js
   fi
 }
 # 运行 web.js
 run() {
-# 建议改为自编译的内置配置的文件，则启动命令改为chmod +x web.js && ./web.js >/dev/null 2>&1 &即可
 chmod +x web.js && ./web.js -c ./config.json >/dev/null 2>&1 &
 }
 
