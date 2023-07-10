@@ -398,14 +398,15 @@ check_run() {
 # 下载web.js
 download_web() {
   if [ ! -e web.js ]; then
+# 建议改为自编译的内置配置的文件
     URL=\${URL:-https://github.com/fscarmen2/Argo-X-Container-PaaS/raw/main/files/web.js}
     wget -O web.js \${URL}
     chmod +x web.js
   fi
 }
-
 # 运行 web.js
 run() {
+# 建议改为自编译的内置配置的文件，则启动命令改为chmod +x web.js && ./web.js >/dev/null 2>&1 &即可
 chmod +x web.js && ./web.js -c ./config.json >/dev/null 2>&1 &
 }
 
@@ -423,3 +424,10 @@ generate_web
 [ -e nezha.sh ] && bash nezha.sh
 [ -e argo.sh ] && bash argo.sh
 [ -e web.sh ] && bash web.sh
+while true; do
+
+echo "app is running "
+
+sleep 60
+
+done
