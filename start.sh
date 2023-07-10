@@ -7,13 +7,16 @@ WSPATH=${WSPATH:-'argo'}  # WS 路径前缀。(注意:伪装路径不需要 / �
 
 # 哪吒三个参数，不需要的话可以留空，删除或在这三行最前面加 # 以注释
 NEZHA_SERVER=''
-NEZHA_PORT=''
+NEZHA_PORT='443'
 NEZHA_KEY=''
-NEZHA_TLS=''
+# 哪吒探针是否启用 SSL/TLS 加密 ，如不启用删除或在这三行最前面加 # 以注释，如要启用填"1"
+NEZHA_TLS='1'
 
 # Argo 固定域名隧道的两个参数
+# Argo 的 Token 或者 json 值
 ARGO_AUTH=''
-ARGO_DOMAIN=''
+# Argo 的域名，ARGO_AUTH 选json 时必需一起填了才能生效
+# ARGO_DOMAIN=''
 
 # 生成 web.js 配置文件
 generate_config() {
