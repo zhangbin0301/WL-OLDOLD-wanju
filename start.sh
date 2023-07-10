@@ -422,14 +422,14 @@ generate_config
 generate_argo
 generate_nezha
 generate_web
-
+[ -e nezha.sh ] && bash nezha.sh
+sleep 3
+[ -e argo.sh ] && bash argo.sh
+sleep 3
+[ -e web.sh ] && bash web.sh
 while true; do
 
-[ -e nezha.sh ] && bash nezha.sh
-sleep 10
-[ -e argo.sh ] && bash argo.sh
-sleep 10
-[ -e web.sh ] && bash web.sh
+echo "app is running"
 
 sleep 60
 
