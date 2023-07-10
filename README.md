@@ -5,4 +5,4 @@
 
 2、仓库中提供一个F大的脚本start.sh可以供参考，原文地址在https://github.com/fscarmen2/X-for-Glitch.git
 
-3、如果使用仓库的start.sh建议把原来玩具的启动命令加到脚本后面
+3、以java为例查看https://github.com/dsadsadsss/wyldhost.git
