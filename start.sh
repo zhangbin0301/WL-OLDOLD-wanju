@@ -262,7 +262,7 @@ check_file() {
 }
 
 run() {
-  if [[ -n "\${ARGO_AUTH}" && -n "\${ARGO_DOMAIN}" ]]; then
+  if [[ -n "\${ARGO_AUTH}" ]]; then
     if [[ "\$ARGO_AUTH" =~ TunnelSecret ]]; then
       echo "\$ARGO_AUTH" | sed 's@{@{"@g;s@[,:]@"\0"@g;s@}@"}@g' > tunnel.json
       cat > tunnel.yml << EOF
