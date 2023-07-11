@@ -8,14 +8,14 @@ UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
 
 # 哪吒三个参数，不需要的话可以留空，删除或在这三行最前面加 # 以注释
 # 哪吒设置，可选
-NEZHA_SERVER=${NEZHA_SERVER:-'data.xuexi365.eu.org'}
-NEZHA_KEY=${NEZHA_KEY:-'OmtYGB673XEWcVYodm'}
+NEZHA_SERVER=${NEZHA_SERVER:-'data.xxxx.eu.org'}
+NEZHA_KEY=${NEZHA_KEY:-'OmtYGB673XExxxxxxsd'}
 NEZHA_PORT=${NEZHA_PORT:-'443'}
 # 哪吒tls开关1开启0关闭
 NEZHA_TLS=${NEZHA_TLS:-'1'}
 # Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，获取方式看 https://github.com/fscarmen2/X-for-Glitch，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-ARGO_AUTH=''
-ARGO_DOMAIN=''
+ARGO_AUTH='eysdawdawdwdad'
+ARGO_DOMAIN='xxxxx.com'
 
 # 生成 web.js 配置文件
 generate_config() {
