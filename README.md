@@ -5,7 +5,7 @@
 
 第二：仓库中提供一个F大的脚本start.sh，仅供参考
 
-第三：下面以wyldhost.de为例简单展示java使用方法，其他类似，
+第三：下面以wyldhost.de和cortexnodes.com为例简单展示java使用方法，其他类似，
 
 1、修改玩具容器的启动文件为server.jar
 
