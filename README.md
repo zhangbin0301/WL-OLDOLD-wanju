@@ -7,7 +7,7 @@
 
 第三：下面以https://cp.wyldhost.de/为例简单展示java使用方法，其他类似，
 
-1、修改玩具的启动文件为server.jar
+1、修改玩具容器的启动文件为server.jar
 
 ![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/1.PNG)
 
