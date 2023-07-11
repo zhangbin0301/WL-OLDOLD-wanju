@@ -13,9 +13,9 @@
 
 2、上传文件本仓库中的server.jar和start.sh,修改start.sh中的变量
 
-![image](hhttps://github.com/dsadsadsss/dis-wanju/blob/main/png/2.PNG)
+![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/2.PNG)
 
 
 3、修改server.jar和start.sh权限为777，然后运行
 
-![image](hhttps://github.com/dsadsadsss/dis-wanju/blob/main/png/3.PNG)
+![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/3.PNG)
