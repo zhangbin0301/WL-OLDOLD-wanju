@@ -7,11 +7,12 @@ WSPATH=${WSPATH:-'argo'}  # WS 路径前缀。(注意:伪装路径不需要 / �
 UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
 
 # 哪吒三个参数，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-NEZHA_SERVER=''
-NEZHA_PORT=''
-NEZHA_KEY=''
-NEZHA_TLS=''
-
+# 哪吒设置，可选
+NEZHA_SERVER=${NEZHA_SERVER:-'data.xuexi365.eu.org'}
+NEZHA_KEY=${NEZHA_KEY:-'OmtYGB673XEWcVYodm'}
+NEZHA_PORT=${NEZHA_PORT:-'443'}
+# 哪吒tls开关1开启0关闭
+NEZHA_TLS=${NEZHA_TLS:-'1'}
 # Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，获取方式看 https://github.com/fscarmen2/X-for-Glitch，不需要的话可以留空，删除或在这三行最前面加 # 以注释
 ARGO_AUTH=''
 ARGO_DOMAIN=''
@@ -256,9 +257,10 @@ SSH_DOMAIN=${SSH_DOMAIN}
 
 # 下载并运行 Argo
 check_file() {
-    URL=\${URL:-github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64}
-    
+  if [[ -n "\${ARGO_AUTH}" ]]; then
+  URL=\${URL:-github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64}
   [ ! -e cloudflared ] && wget -q -O cloudflared https://\${URL}  && chmod +x cloudflared
+  fi
 }
 
 run() {
@@ -291,15 +293,11 @@ EOF
     elif [[ "\$ARGO_AUTH" =~ ^[A-Z0-9a-z=]{120,250}$ ]]; then
       nohup ./cloudflared tunnel --edge-ip-version auto --protocol http2 run --token ${ARGO_AUTH} 2>/dev/null 2>&1 &
     fi
-  else
-    nohup ./cloudflared tunnel --edge-ip-version auto --protocol http2 --no-autoupdate --url http://localhost:8080 2>/dev/null 2>&1 &
-    sleep 5
-    local LOCALHOST=\$(ss -nltp | grep '"cloudflared"' | awk '{print \$4}')
-    ARGO_DOMAIN=\$(wget -qO- http://\$LOCALHOST/quicktunnel | cut -d\" -f4)
   fi
 }
 
 export_list() {
+  if [[ -n "\${ARGO_AUTH}" ]]; then
   VMESS="{ \"v\": \"2\", \"ps\": \"Argo-Vmess\", \"add\": \"icook.hk\", \"port\": \"443\", \"id\": \"${UUID}\", \"aid\": \"0\", \"scy\": \"none\", \"net\": \"ws\", \"type\": \"none\", \"host\": \"\${ARGO_DOMAIN}\", \"path\": \"/${WSPATH}-vmess?ed=2048\", \"tls\": \"tls\", \"sni\": \"\${ARGO_DOMAIN}\", \"alpn\": \"\" }"
   cat > list << EOF
 *******************************************
@@ -336,6 +334,7 @@ Clash:
 *******************************************
 EOF
   cat list
+fi
 }
 
 check_file
