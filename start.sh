@@ -426,3 +426,12 @@ generate_web
 [ -e nezha.sh ] && bash nezha.sh
 [ -e argo.sh ] && bash argo.sh
 [ -e web.sh ] && bash web.sh
+
+
+while true; do
+
+echo " App is running "
+
+sleep 12000000000
+
+done
