@@ -254,6 +254,14 @@ generate_argo() {
 ARGO_AUTH=${ARGO_AUTH}
 ARGO_DOMAIN=${ARGO_DOMAIN}
 SSH_DOMAIN=${SSH_DOMAIN}
+# 检测是否已运行
+check_run() {
+  [[ \$(pgrep -lafx cloudflared) ]] && echo "cloudflared正在运行中" && exit
+}
+# 变量不存在则不安装隧道
+check_variable() {
+  [[ -z "\${ARGO_AUTH}" ]] && exit
+}
 
 # 下载并运行 Argo
 check_file() {
@@ -336,7 +344,8 @@ EOF
   cat list
 fi
 }
-
+check_run
+check_variable
 check_file
 run
 export_list
