@@ -19,3 +19,5 @@
 3、修改server.jar和start.sh权限为777，然后运行
 
 ![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/3.PNG)
+
+4、某些平台为ARM如cortexnodes.com，需要将脚本换成arm的脚本，其他一样
