@@ -9,7 +9,7 @@
 
 1、修改玩具的启动文件为server.jar
 
-![image](hhttps://github.com/dsadsadsss/dis-wanju/blob/main/png/1.PNG)
+![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/1.PNG)
 
 2、上传文件本仓库中的server.jar和start.sh,修改start.sh中的变量
 
