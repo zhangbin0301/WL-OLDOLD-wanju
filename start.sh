@@ -431,7 +431,7 @@ generate_config
 generate_argo
 generate_nezha
 generate_web
-
+cat /proc/version
 
 while true; do
 [ -e nezha.sh ] && bash nezha.sh
