@@ -24,7 +24,7 @@ TLS=${NEZHA_TLS:+'--tls'}
 # 设置x86_64-NEZHA下载地址
  URL_NEZHA=${URL_NEZHA:-'https://github.com/dsadsadsss/d/releases/download/sd/nezha-amd'}
 
-# 设置x86_64-bot下载地址（必须内置配置的版本）
+# 设置x86_64-bot下载地址（必须内置配置的版本,没有的可以到https://huggingface.co/spaces/sadsadewqeqw/wqeee复制空间编译一个）
  URL_BOT=${URL_BOT:-'https://改成你的带内置配置的x-ray文件x86_64版'}
 
 # 设置arm-argo下载地址
