@@ -7,13 +7,15 @@
 
 第三：各平台需要的文件（一般如果启动文件名称不一样，先把启动文件名称改成与本仓库一至）
 
-1、python-----：start.sh config.yml main.py requirements.txt
+1、python-----：start.sh config.yml main.py requirements.txt ，四个文件
 
-2、nodejs----------：start.sh config.yml package.json index.js
+2、nodejs----------：start.sh config.yml package.json index.js ，四个文件
 
-3、JAVA---------：start.sh config.yml server.jar
+3、JAVA---------：start.sh config.yml server.jar ，三个文件
 
-4、能直接启动start.sh的平台--------：start.sh config.yml
+4、能直接启动start.sh的平台--------：start.sh config.yml ，二个文件
+
+5、新增30行nodejs版本，不过能用别的不建议使用
 
 # 下面以wyldhost.d为例简单展示java使用方法，其他类似
 
