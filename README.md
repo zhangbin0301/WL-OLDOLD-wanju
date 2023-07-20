@@ -3,17 +3,17 @@
 
 第一：包含三种平台脚本，脚本功能一样，都是调用start.sh脚本启动xray
 
-第二：仓库中提供一个我的脚本start.sh，仅供参考
+第二：仓库中提供一个我的脚本start.sh，仅供参考，脚本自适应amd和arm，你需要在config.yml里面设置参数，端口无所谓，因为这是利用ARGO隧道的配置
 
 第三：各平台需要的文件（一般如果启动文件名称不一样，先把启动文件名称改成与本仓库一至）
 
-python:start.sh config.yml main.py requirements.txt
+1、python:start.sh config.yml main.py requirements.txt
 
-nodejs:start.sh config.yml package.json index.js
+2、nodejs:start.sh config.yml package.json index.js
 
-JAVA:start.sh config.yml server.jar
+3、JAVA:start.sh config.yml server.jar
 
-能直接启动start.sh的平台：start.sh config.yml
+4、能直接启动start.sh的平台：start.sh config.yml
 
 # 下面以wyldhost.de和cortexnodes.com为例简单展示java使用方法，其他类似，
 
