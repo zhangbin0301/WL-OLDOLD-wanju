@@ -25,12 +25,12 @@
 
 ![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/1.PNG)
 
-2、上传文件本仓库中的server.jar和config.yml,修改config.yml中的变量
+2、上传文件本仓库中的start.sh config.yml server.jar三个文件,修改config.yml中的变量
 
 ![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/2.PNG)
 
 
-3、修改server.jar和start.sh权限为777，然后运行
+3、修改server.jar和start.sh权限为777，然后启动容器
 
 ![image](https://github.com/dsadsadsss/dis-wanju/blob/main/png/3.PNG)
 
