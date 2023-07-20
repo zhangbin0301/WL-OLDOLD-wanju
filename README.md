@@ -15,7 +15,7 @@
 
 4、能直接启动start.sh的平台：start.sh config.yml
 
-# 下面以wyldhost.de和cortexnodes.com为例简单展示java使用方法，其他类似，
+# 下面以wyldhost.d为例简单展示java使用方法，其他类似
 
 1、修改玩具容器的启动文件为server.jar
 
