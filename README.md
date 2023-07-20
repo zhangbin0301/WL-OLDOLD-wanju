@@ -17,7 +17,7 @@
 
 5、新增30行nodejs版本，不过能用别的不建议使用
 
-# 下面以wyldhost.d为例简单展示java使用方法，其他类似
+# 下面以wyldhost.de为例简单展示java使用方法，其他类似
 
 1、修改玩具容器的启动文件为server.jar
 
