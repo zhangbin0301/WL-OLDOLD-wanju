@@ -16,7 +16,7 @@ NEZHA_PORT=${NEZHA_PORT:-'443'}
 NEZHA_TLS=${NEZHA_TLS:-'1'}
 TLS=${NEZHA_TLS:+'--tls'}
 
-# ===========================================设置下载链接=============================================
+# ===========================================设置下载链接（两种平台都要设置，脚本自适应选择下载）=============================================
 
 # 设置x86_64-argo下载地址
  URL_CF=${URL_CF:-'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64'}
