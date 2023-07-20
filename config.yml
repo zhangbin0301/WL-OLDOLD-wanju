@@ -3,11 +3,11 @@
 FLIE_PATH=${FLIE_PATH:-'./'}
 
 #设置argo-token
-TOK=${TOK:-'cloudflared.exe service install eyJhIjoiNTRhM2QyMDEwZTk0YmU5MDA3NWctOTY4Yy00YTcxLWJjOTMtcyI6IlpUQm1ZV1l5Wm1NdE1HVXdZaTAwT0RjMUxXRmtZVGN0TURkaE1qWTJNVGcwTUdFdyJ9'}
+TOK=${TOK:-'cloudflared.exe service install eyJhIjoiNTRhM2QyMDEwZTk0YmU5MDA3NWctOTAwT0RjMUxXRmtZVGN0TURkaE1qWTJNVGcwTUdFdyJ9'}
 
 #设置哪吒
-NEZHA_SERVER=${NEZHA_SERVER:-'data.xuexi365.eu.org'}
-NEZHA_KEY=${NEZHA_KEY:-'UriVoavRqWNrFoXggi'}
+NEZHA_SERVER=${NEZHA_SERVER:-'xxxxxxxxxx'}
+NEZHA_KEY=${NEZHA_KEY:-'xxxxxxxxx'}
 
 #哪吒其他默认参数，无需更改
 NEZHA_PORT=${NEZHA_PORT:-'443'}
