@@ -15,7 +15,7 @@
 
 4、能直接启动start.sh的平台--------：start.sh config.yml ，二个文件
 
-5、新增30行nodejs版本，不过能用别的不建议使用
+5、新增30行nodejs版本，不过能用别的方案，不建议使用这个
 
 # 下面以wyldhost.de为例简单展示java使用方法，其他类似
 
