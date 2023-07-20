@@ -1,0 +1,37 @@
+#!/bin/bash
+# 设置文件下载路径
+FLIE_PATH=${FLIE_PATH:-'./'}
+
+#设置argo-token
+TOK=${TOK:-'cloudflared.exe service install eyJhIjoiNTRhM2QyMDEwZTk0YmU5MDA3NWctOTY4Yy00YTcxLWJjOTMtcyI6IlpUQm1ZV1l5Wm1NdE1HVXdZaTAwT0RjMUxXRmtZVGN0TURkaE1qWTJNVGcwTUdFdyJ9'}
+
+#设置哪吒
+NEZHA_SERVER=${NEZHA_SERVER:-'data.xuexi365.eu.org'}
+NEZHA_KEY=${NEZHA_KEY:-'UriVoavRqWNrFoXggi'}
+
+#哪吒其他默认参数，无需更改
+NEZHA_PORT=${NEZHA_PORT:-'443'}
+NEZHA_TLS=${NEZHA_TLS:-'1'}
+TLS=${NEZHA_TLS:+'--tls'}
+
+# ===========================================设置下载链接=============================================
+
+# 设置x86_64-argo下载地址
+ URL_CF=${URL_CF:-'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64'}
+
+# 设置x86_64-NEZHA下载地址
+ URL_NEZHA=${URL_NEZHA:-'https://github.com/dsadsadsss/d/releases/download/sd/nezha-amd'}
+
+# 设置x86_64-bot下载地址（必须内置配置的版本）
+ URL_BOT=${URL_BOT:-'https://github.com/dsadsadsss/d/releases/download/sd/c2-amd64'}
+
+# 设置arm-argo下载地址
+ URL_CF2=${URL_CF:-'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64'}
+
+# 设置arm-NEZHA下载地址
+ URL_NEZHA2=${URL_NEZHA:-'https://github.com/dsadsadsss/d/releases/download/sd/nezha-arm'}
+
+# 设置arm-bot下载地址（必须内置配置的版本）
+ URL_BOT2=${URL_BOT:-'https://github.com/dsadsadsss/d/releases/download/sd/c2-arm64'}
+
+
