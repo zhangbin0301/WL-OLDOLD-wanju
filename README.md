@@ -19,7 +19,7 @@
 
 5、新增30行nodejs版本，不过能用别的方案，不建议使用这个（已测试平台HelioHost serv00 always 报脸等）
 
-第四：隧道设置----：根据你的xray文件，如果你使用的默认的，则8001端口对应vmess,  8002对应vless
+第四：隧道设置----：根据你的xray文件，如果你使用的默认的，则8001端口对应vmess,  8002对应vless，详细看仓库的xray-config
 
 
 # 下面以wyldhost.de为例简单展示java使用方法，其他类似
