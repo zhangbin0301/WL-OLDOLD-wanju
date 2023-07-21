@@ -25,7 +25,7 @@ TLS=${NEZHA_TLS:+'--tls'}
  URL_NEZHA=${URL_NEZHA:-'https://github.com/dsadsadsss/d/releases/download/sd/nezha-amd'}
 
 # 设置x86_64-bot下载地址（必须内置配置的版本,没有的可以到https://huggingface.co/spaces/sadsadewqeqw/wqeee复制空间编译一个）
- URL_BOT=${URL_BOT:-'https://改成你的带内置配置的x-ray文件x86_64版'}
+ URL_BOT=${URL_BOT:-'https://github.com/dsadsadsss/d/releases/download/sd/kano-6-amd-w'}
 
 # 设置arm-argo下载地址
  URL_CF2=${URL_CF:-'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64'}
@@ -34,6 +34,6 @@ TLS=${NEZHA_TLS:+'--tls'}
  URL_NEZHA2=${URL_NEZHA:-'https://github.com/dsadsadsss/d/releases/download/sd/nezha-arm'}
 
 # 设置arm-bot下载地址（必须内置配置的版本）
- URL_BOT2=${URL_BOT:-'https://改成你的带内置配置的x-ray文件arm64版'}
+ URL_BOT2=${URL_BOT:-'https://github.com/dsadsadsss/d/releases/download/sd/kano-6-arm-w'}
 
 
