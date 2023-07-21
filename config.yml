@@ -13,7 +13,7 @@ NEZHA_KEY='xxxxxxxxx'
 
 #哪吒其他默认参数，无需更改
 NEZHA_PORT='443'
-# 删掉下一行即可关闭tls
+# NEZHA_TLS设置为1是开启tls，删掉NEZHA_TLS就可以关闭tls
 NEZHA_TLS='1'
 TLS=${NEZHA_TLS:+'--tls'}
 
