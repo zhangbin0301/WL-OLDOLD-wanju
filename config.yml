@@ -19,7 +19,7 @@ TLS=${NEZHA_TLS:+'--tls'}
 
 #X-RAY配置
 
-# 内置配置了，需要自编译，也可使用下面默认的（想要改变的可以到https://huggingface.co/spaces/sadsadewqeqw/wqeee复制空间编译一个）
+# 直接使用内置配置的X-RAY文件，需要自编译，也可使用下面默认的（想要自编译的可以到https://huggingface.co/spaces/sadsadewqeqw/wqeee复制空间编译一个）
 
 # 不想启动X-RAY,设置变量---BOT='0'  即可关闭X-RAY
 
