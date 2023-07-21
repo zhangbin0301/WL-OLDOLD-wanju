@@ -12,9 +12,9 @@ NEZHA_SERVER='xxxxxxxxxx'
 NEZHA_KEY='xxxxxxxxx'
 
 #哪吒其他默认参数，无需更改
-NEZHA_PORT=${NEZHA_PORT:-'443'}
+NEZHA_PORT='443'
 # 删掉下一行即可关闭tls
-NEZHA_TLS=${NEZHA_TLS:-'1'}
+NEZHA_TLS='1'
 TLS=${NEZHA_TLS:+'--tls'}
 
 #X-RAY配置
