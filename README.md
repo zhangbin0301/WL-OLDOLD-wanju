@@ -17,7 +17,7 @@
 
 4、能直接启动start.sh的平台--------：start.sh config.yml ，二个文件
 
-5、新增30行nodejs版本，不过能用别的方案，不建议使用这个
+5、新增30行nodejs版本，不过能用别的方案，不建议使用这个（已测试平台HelioHost serv00 always 报脸等）
 
 第四：隧道设置根据你的xray文件，如果你使用的默认的则8001对应vmess,8002对应vless
 
