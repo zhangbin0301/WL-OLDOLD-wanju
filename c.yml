@@ -18,7 +18,6 @@ NEZHA_KEY='xxxxxxxxx'
 NEZHA_PORT='443'
 # 设置NEZHA_TLS为1开启tls，删掉NEZHA_TLS是关闭tls
 NEZHA_TLS='1'
-TLS=${NEZHA_TLS:+'--tls'}
 
 #XR-AY配置
 # 内置配置了，需要自编译，也可使用下面默认的（想要改变的可以到https://huggingface.co/spaces/sadsadewqeqw/wqeee复制空间编译一个）
