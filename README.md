@@ -7,6 +7,12 @@
 
        这个脚本有部分alpine平台会出错，建议换成自己的脚本，脚本名称改为start.sh即可
 
+       比如F大的脚本https://github.com/fscarmen2/X-for-Stozu.git
+       
+       https://github.com/fscarmen2/X-for-Botshard-ARM.git
+
+
+
 第三：各平台需要的文件（一般如果启动文件名称不一样，先把启动文件名称改成与本仓库一至）
 
 1、python-----：start.sh config.yml main.py requirements.txt ，四个文件
